@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "زندگی من",
+    "slug": "my-life-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F0"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mylife.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "برای ضبط صدا در خاطرات و یادگیری زبان",
+        "NSPhotoLibraryUsageDescription": "برای انتخاب عکس‌های خانوادگی در رنگ‌آمیزی و خاطرات",
+        "NSCameraUsageDescription": "برای عکاسی از اعضا خانواده در رنگ‌آمیزی",
+        "NSMusicUsageDescription": "برای پخش موسیقی پس‌زمینه",
+        "NSFaceIDUsageDescription": "برای ورود امن با تشخیص چهره (Face ID)"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF8F0"
+      },
+      "package": "com.mylife.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ],
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-av",
+      "expo-local-authentication"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e42b9491-4057-4d64-9870-91dc7d384b8e"
+      }
+    },
+    "owner": "itbutane"
+  }
+}

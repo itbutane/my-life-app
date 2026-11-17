@@ -1,0 +1,10 @@
+lia
+lia/**
+android
+ios
+.expo
+dist
+node_modules
+*.log
+itbutane
+itbutane/**
